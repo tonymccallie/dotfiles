@@ -1,1 +1,9 @@
-cp .stowrc ~/
+# dotfiles
+## system install
+`yay -S eza tmux tmuxinator lazygit fzf btop zoxide`
+
+## stow config
+`cp .stowrc ~/`
+
+## tmux
+`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
