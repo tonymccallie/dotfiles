@@ -17,6 +17,7 @@
     "custom/notification",
     "custom/arrow-dark-on-light-left",
     "tray",
+    "custom/power"
   ],
 
   "hyprland/workspaces": {
@@ -57,7 +58,7 @@
   },
 
   "clock": {
-    "format": " {:%I:%M}",
+    "format": "  {:%I:%M}",
     "format-alt": "{:%A, %d %b, %Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -200,6 +201,12 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
+  },
+
+  "custom/power": {
+      "format": " 󰐥 ",
+      "tooltip": false,
+      "on-click": "wlogout"
   },
 
   "tray": {
