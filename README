@@ -1,6 +1,6 @@
 # dotfiles
 ## system install
-`yay -S eza tmux tmuxinator lazygit fzf btop zoxide`
+`yay -S eza tmux tmuxinator lazygit fzf btop zoxide swww`
 
 ## stow config
 `cp .stowrc ~/`
