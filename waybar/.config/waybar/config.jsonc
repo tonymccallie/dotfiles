@@ -159,7 +159,7 @@
     "format": "",
     "tooltip": false,
     "on-click-right": "nwg-drawer",
-    "on-click": "wofi --show run",
+    "on-click": "wofi",
     "on-click-middle": "pkill -9 wofi",
   },
   "custom/pacman": {
