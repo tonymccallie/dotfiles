@@ -60,6 +60,7 @@
 @define-color critical #BF616A;
 @define-color tray @bg;
 @define-color mode @bg;
+@define-color green #427b58;
 
 @define-color bluetint #448488;
 @define-color bluelight #83a597;
@@ -230,12 +231,12 @@
 }
 #custom-arrow4 {
   font-size: 2.38em;
-  color: @font_gruv_normal;
+  color: @green;
   background: @bg;
 }
 #custom-arrow5 {
   font-size: 2.38em;
-  color: @font_gruv_normal;
+  color: @green;
   background: @bg;
 }
 #custom-arrow6 {
@@ -256,12 +257,12 @@
 
 /* And now modules themselves in their respective order */
 #clock.time {
-  background: @font_gruv_normal;
-  color: @font_dark_alternative;
+  background: @green;
+  color: @font_gruv_normal;
 }
 #clock.date {
-  background: @font_gruv_normal;
-  color: @font_dark_alternative;
+  background: @green;
+  color: @font_gruv_normal;
 }
 
 #custom-scratchpad-indicator {
@@ -392,8 +393,8 @@
   font-weight: normal;
 }
 #custom-weather {
-  background: @font_gruv_normal;
-  color: @font_dark_alternative;
+  background: @green;
+  color: @font_gruv_normal;
   font-weight: bold;
   padding: 0 0.6em;
 }
