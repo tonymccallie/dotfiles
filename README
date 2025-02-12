@@ -1,6 +1,6 @@
 # dotfiles
 ## system install
-`yay -S eza tmux tmuxinator lazygit fzf btop zoxide swaync ttf-meslo-nerd ttf-font-awesome font-manager wttrbar gnome-calendar`
+`yay -S eza tmux tmuxinator lazygit fzf btop zoxide swaync ttf-meslo-nerd ttf-font-awesome font-manager wttrbar gnome-calendar adwaita-dark nwg-look`
 
 
 
