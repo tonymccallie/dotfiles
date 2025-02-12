@@ -1,291 +1,291 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    
-    // "height": 36, // Waybar height (to be removed for auto height)
-    // Archived modules
-    // "custom/gpu",  "custom/weather","hyprland/window", "custom/gpu",  "custom/media",  
-    // Choose the order of the modules
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
 
-    "modules-left": [
-      "custom/rofi",
-      "hyprland/workspaces", 
-      "custom/arrow1", 
-      "custom/pacman", 
-      "custom/arrow2", 
-      "idle_inhibitor", 
-      "custom/arrow3",  
-      "custom/playerctl"
-    ],
-    "modules-center": [
-      "custom/arrow4", 
-      "clock#time", 
-      "clock#date", 
-      "custom/weather",
-      "custom/arrow5"
-    ],
-    "modules-right": [
-      "custom/arrow6", 
-      "pulseaudio", 
-      "custom/arrow7",  
-      "cpu", 
-      "memory",
-      "custom/arrow8", 
-      "network", 
-      "custom/notification",
-      "tray",
-      "custom/power",
-    ],
-    
-    // Modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        // "format": "{icon}",
-        // "format-icons": {
-        //     "1": "Home",
-        //     "2": "Work",
-        //     "3": "Music",
-        //     "4": "Game",
-        //     "5": "Slush",
-        //     "urgent": "",
-        //     "focused": "",
-        //     "default": ""
-        // },
-        "persistent-workspaces": {
-          "*": 5,
-        },
+  // "height": 36, // Waybar height (to be removed for auto height)
+  // Archived modules
+  // "custom/gpu",  "custom/weather","hyprland/window", "custom/gpu",  "custom/media",
+  // Choose the order of the modules
+
+  "modules-left": [
+    "custom/rofi",
+    "hyprland/workspaces",
+    "custom/arrow1",
+    "custom/pacman",
+    "custom/arrow2",
+    "idle_inhibitor",
+    "custom/arrow3",
+    "custom/playerctl",
+  ],
+  "modules-center": [
+    "custom/arrow4",
+    "clock#time",
+    "clock#date",
+    "custom/weather",
+    "custom/arrow5",
+  ],
+  "modules-right": [
+    "custom/arrow6",
+    "pulseaudio",
+    "custom/arrow7",
+    "cpu",
+    "memory",
+    "custom/arrow8",
+    "network",
+    "custom/notification",
+    "tray",
+    "custom/power",
+  ],
+
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    // "format": "{icon}",
+    // "format-icons": {
+    //     "1": "Home",
+    //     "2": "Work",
+    //     "3": "Music",
+    //     "4": "Game",
+    //     "5": "Slush",
+    //     "urgent": "",
+    //     "focused": "",
+    //     "default": ""
+    // },
+    "persistent-workspaces": {
+      "*": 5,
     },
-    "bluetooth": {
-        "interval": 30,
-        "format": "{icon}",
-        // "format-alt": "{status}",
-        "format-icons": {
-            "enabled": "",
-            "disabled": "ss"
-        },
-        "on-click": "blueberry"
-    },    
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
-        "tooltip": "true"
+  },
+  "bluetooth": {
+    "interval": 30,
+    "format": "{icon}",
+    // "format-alt": "{status}",
+    "format-icons": {
+      "enabled": "",
+      "disabled": "ss",
     },
-    "tray": {
-        //"icon-size": 14,
-        "spacing": 4
+    "on-click": "blueberry",
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": "",
     },
-    "clock#time": {
-        "interval": 10,
-        "format": "  {:%H:%M}",
-        "tooltip": false
-    },
-    "clock#date": {
-        "interval": 20,
-        "format": "  {:%a %e/%m}",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        //"today-format": "<b>{}</b>",
-        "on-click": "gnome-calendar",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-          "mode": "month",
-          "mode-mon-col": 3,
-          "weeks-pos": "left",
-          "on-scroll": 1,
-          "format": {
-            "months": "<span color='#d4be98'><b>{}</b></span>",
-            "days": "<span color='#d4be98'><b>{}</b></span>",
-            "weeks": "<span color='#a9b665'><b>W{}</b></span>",
-            "weekdays": "<span color='#d8a657'><b>{}</b></span>",
-            "today": "<span color='#e78a4e'><b><u>{}</u></b></span>",
-          },
+    "tooltip": "true",
+  },
+  "tray": {
+    //"icon-size": 14,
+    "spacing": 4,
+  },
+  "clock#time": {
+    "interval": 10,
+    "format": "  {:%I:%M}",
+    "tooltip": false,
+  },
+  "clock#date": {
+    "interval": 20,
+    "format": "  {:%a %e/%m}",
+    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    //"today-format": "<b>{}</b>",
+    "on-click": "gnome-calendar",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "left",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#d4be98'><b>{}</b></span>",
+        "days": "<span color='#d4be98'><b>{}</b></span>",
+        "weeks": "<span color='#a9b665'><b>W{}</b></span>",
+        "weekdays": "<span color='#d8a657'><b>{}</b></span>",
+        "today": "<span color='#e78a4e'><b><u>{}</u></b></span>",
+      },
     },
     "actions": {
       "on-click-middle": "mode",
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down",
     },
+  },
+  "cpu": {
+    "interval": 5,
+    "format": " {usage:2}%",
+    "on-click": "kitty -e btop",
+    "tooltip": false,
+  },
+  "memory": {
+    "tooltip": true,
+    "format": " {}%",
+    "states": {
+      "warning": 60,
+      "critical": 80,
     },
-    "cpu": {
-        "interval": 5,      
-        "format": " {usage:2}%",
-        "on-click": "kitty -e btop",
-        "tooltip": false
+    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB",
+  },
+  "network": {
+    // "interface": "wlan0", // (Optional) To force the use of this interface,
+    "format-wifi": "<span color=\"#ebdbb2\"></span>  {essid}",
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "family": "ipv4",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+  },
+  "pulseaudio": {
+    "scroll-step": 3, // %, can be a float
+    "format": "{icon} {volume:2}% {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "",
+    "format-source-muted": "<span color=\"#fb4833\"></span>",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
     },
-    "memory": {
-      "tooltip": true,
-      "format": " {}%",
-      "states": {
-        "warning": 60,
-        "critical": 80,
-      },
-      "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB",
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+  },
+  "custom/rofi": {
+    "format": "",
+    "tooltip": false,
+    "on-click-right": "nwg-drawer",
+    "on-click": "wofi --show run",
+    "on-click-middle": "pkill -9 wofi",
+  },
+  "custom/pacman": {
+    "format": "<big></big>  {}",
+    "interval": 3600, // every hour
+    "exec": "checkupdates | wc -l", // # of updates
+    "exec-if": "exit 0", // always run; consider advanced run conditions
+    "on-click": "kitty -e 'yay'; pkill -SIGRTMIN+8 waybar", // update system
+    "signal": 8,
+    "max-length": 5,
+    "min-length": 3,
+  },
+  "custom/weather2": {
+    "exec": "curl 'https://wttr.in/?format=1'",
+    "interval": 3600,
+  },
+  "custom/weather": {
+    "format": " {}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Missoula --fahrenheit",
+    "return-type": "json",
+  },
+  "custom/cpugovernor": {
+    "format": "{icon}",
+    "interval": "once",
+    "return-type": "json",
+    "exec": "$HOME/.config/waybar/custom_modules/cpugovernor.sh",
+    "min-length": 2,
+    "max-length": 3,
+    "signal": 8,
+    "format-icons": {
+      "perf": "",
+      "ondemand": "",
     },
-    "network": {
-        // "interface": "wlan0", // (Optional) To force the use of this interface,
-        "format-wifi": "<span color=\"#ebdbb2\"></span>  {essid}",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "family": "ipv4",
-        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
-        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
+    "on-click": "$HOME/.config/waybar/custom_modules/cpugovernor.sh switch",
+    // Requires cpupower to switch governors
+  },
+  "custom/playerctl": {
+    "exec": "$HOME/.config/waybar/custom_modules/media-player-status.py",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 40,
+    "format-icons": {
+      "spotify": "",
+      "default": "🎜",
     },
-    "pulseaudio": {
-        "scroll-step": 3, // %, can be a float
-        "format": "{icon} {volume:2}% {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "",
-        "format-source-muted": "<span color=\"#fb4833\"></span>",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol",
-        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    "escape": false,
+    "exec": "$HOME/.config/waybar/custom_modules/mediaplayer.py 2> /dev/null", // Script in resources folder
+    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": " ",
+      "none": " ",
+      "dnd-notification": "<span foreground='#ea6962'></span>",
+      "dnd-none": "<span foreground='#ea6962'> </span>",
+      "inhibited-notification": " ",
+      "inhibited-none": " ",
+      "dnd-inhibited-notification": "<span foreground='#ea6962'> </span>",
+      "dnd-inhibited-none": "<span foreground='#ea6962'> </span>",
     },
-    "custom/rofi": {
-      "format": "",
-      "tooltip": false,
-      "on-click-right": "nwg-drawer",
-      "on-click": "wofi --show run",
-      "on-click-middle": "pkill -9 wofi"
-    },
-    "custom/pacman": {
-        "format": "<big></big>  {}",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "kitty -e 'yay'; pkill -SIGRTMIN+8 waybar", // update system
-        "signal": 8,
-        "max-length": 5,
-        "min-length": 3
-    },
-    "custom/weather2": {
-        "exec": "curl 'https://wttr.in/?format=1'",
-        "interval": 3600
-    },
-    "custom/weather": {
-      "format": " {}°",
-      "tooltip": true,
-      "interval": 3600,
-      "exec": "wttrbar --location Missoula --fahrenheit",
-      "return-type": "json",
-    },
-    "custom/cpugovernor": {
-      "format": "{icon}",
-      "interval": "once",
-      "return-type": "json",
-      "exec": "$HOME/.config/waybar/custom_modules/cpugovernor.sh",
-      "min-length": 2,
-      "max-length": 3,
-      "signal": 8,
-        "format-icons": {
-            "perf": "",
-            "ondemand": ""
-        },
-        "on-click": "$HOME/.config/waybar/custom_modules/cpugovernor.sh switch"
-        // Requires cpupower to switch governors
-    },
-    "custom/playerctl": {
-        "exec": "$HOME/.config/waybar/custom_modules/media-player-status.py",
-        "return-type": "json",
-        "on-click": "playerctl play-pause",
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": false,
-        "exec": "$HOME/.config/waybar/custom_modules/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on 
-    },
-    "custom/notification": {
-      "tooltip": false,
-      "format": "{icon}",
-      "format-icons": {
-        "notification": " ",
-        "none": " ",
-        "dnd-notification": "<span foreground='#ea6962'></span>",
-        "dnd-none": "<span foreground='#ea6962'> </span>",
-        "inhibited-notification": " ",
-        "inhibited-none": " ",
-        "dnd-inhibited-notification": "<span foreground='#ea6962'> </span>",
-        "dnd-inhibited-none": "<span foreground='#ea6962'> </span>",
-      },
-      "return-type": "json",
-      "exec-if": "which swaync-client",
-      "exec": "swaync-client -swb",
-      "on-click": "swaync-client -t -sw",
-      "on-click-right": "swaync-client -d -sw",
-      "escape": true,
-    },
-    "custom/arrow1": {
-        "format": "",
-        "tooltip": false
-    },
-    "custom/arrow2": {
-        "format": "",
-        "tooltip": false
-    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+  "custom/arrow1": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/arrow2": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow3": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow3": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow4": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow4": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow5": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow5": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow6": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow6": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow7": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow7": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow8": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow8": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow9": {
-        "format": "",
-        "tooltip": false
-    },
+  "custom/arrow9": {
+    "format": "",
+    "tooltip": false,
+  },
 
-    "custom/arrow10": {
-        "format": "",
-        "tooltip": false
-    }, 
-    "custom/power": {
-        "format": " 󰐥 ",
-        "tooltip": false,
-        "on-click": "wlogout"
-    }
+  "custom/arrow10": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/power": {
+    "format": " 󰐥 ",
+    "tooltip": false,
+    "on-click": "wlogout",
+  },
 }

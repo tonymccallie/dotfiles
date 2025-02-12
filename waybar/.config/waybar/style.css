@@ -1,26 +1,24 @@
-
 @keyframes blink-warning {
-    70% {
-        color: @light;
-    }
+  70% {
+    color: @light;
+  }
 
-    to {
-        color: @light;
-        background-color: @warning;
-    }
+  to {
+    color: @light;
+    background-color: @warning;
+  }
 }
 
 @keyframes blink-critical {
-    70% {
-      color: @light;
-    }
+  70% {
+    color: @light;
+  }
 
-    to {
-        color: @light;
-        background-color: @critical;
-    }
+  to {
+    color: @light;
+    background-color: @critical;
+  }
 }
-
 
 /* -----------------------------------------------------------------------------
  * Styles
@@ -58,7 +56,6 @@
 
 @define-color nord_dark_font #272727;
 
-
 @define-color bg #282828;
 @define-color critical #BF616A;
 @define-color tray @bg;
@@ -68,7 +65,6 @@
 @define-color bluelight #83a597;
 @define-color magenta-dark #b16185;
 
-
 @define-color font_gruv_normal #ebdbb2;
 @define-color font_gruv_faded #a89985;
 @define-color font_gruv_darker #D8DEE9;
@@ -76,19 +72,19 @@
 
 /* Reset all styles */
 * {
-    border: none;
-    border-radius: 0px;
-    min-height: 0;
-    /*margin: 0.15em 0.25em 0.15em 0.25em;*/
+  border: none;
+  border-radius: 0px;
+  min-height: 0;
+  /*margin: 0.15em 0.25em 0.15em 0.25em;*/
 }
 
 /* The whole bar */
 #waybar {
-    background: @bg;
-    color: @light;
-    font-family: "Futura", sans-serif, "FontAwesome";
-    font-size: 11pt;
-    font-weight: bold;
+  background: @bg;
+  color: @light;
+  font-family: "Futura", sans-serif, "FontAwesome";
+  font-size: 11pt;
+  font-weight: bold;
 }
 
 /* Each module */
@@ -114,9 +110,9 @@
 #custom-pacman,
 #idle_inhibitor,
 #bluetooth {
-/*    padding-left: 0.3em;
+  /*    padding-left: 0.3em;
     padding-right: 0.3em;*/
-    padding: 0.6em 0.8em;
+  padding: 0.6em 0.8em;
 }
 
 /* Each module that should blink */
@@ -124,9 +120,9 @@
 #memory,
 #temperature,
 #battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* Each critical module */
@@ -134,7 +130,7 @@
 #cpu.critical,
 #temperature.critical,
 #battery.critical {
-    color: @critical;
+  color: @critical;
 }
 
 /* Each critical that should blink */
@@ -142,8 +138,8 @@
 #memory.critical,
 #temperature.critical,
 #battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
+  animation-name: blink-critical;
+  animation-duration: 2s;
 }
 
 /* Each warning */
@@ -152,14 +148,14 @@
 #cpu.warning,
 #temperature.warning,
 #battery.warning {
-    background: @warning;
-    color: @nord_dark_font;
+  background: @warning;
+  color: @nord_dark_font;
 }
 
 /* Each warning that should blink */
 #battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
+  animation-name: blink-warning;
+  animation-duration: 3s;
 }
 
 /* Adding arrows to boxes */
@@ -218,186 +214,186 @@
 }*/
 
 #custom-arrow1 {
-    font-size: 2em;
-    color: @bg;
-    background: @bluetint;
+  font-size: 2em;
+  color: @bg;
+  background: @bluetint;
 }
 #custom-arrow2 {
-    font-size: 2em;
-    color: @bluetint;
-    background: @font_dark_alternative;
+  font-size: 2em;
+  color: @bluetint;
+  background: @font_dark_alternative;
 }
 #custom-arrow3 {
-    font-size: 2em;
-    color: @font_dark_alternative;
-    background: @bg;
+  font-size: 2em;
+  color: @font_dark_alternative;
+  background: @bg;
 }
 #custom-arrow4 {
-    font-size: 2.1em;
-    color: @font_gruv_normal;
-    background: @bg;
+  font-size: 2.38em;
+  color: @font_gruv_normal;
+  background: @bg;
 }
 #custom-arrow5 {
-    font-size: 2.12em;
-    color: @font_gruv_normal;
-    background: @bg;
+  font-size: 2.38em;
+  color: @font_gruv_normal;
+  background: @bg;
 }
 #custom-arrow6 {
-    font-size: 2em;
-    color: @font_dark_alternative;
-    background: @bg;
+  font-size: 2em;
+  color: @font_dark_alternative;
+  background: @bg;
 }
 #custom-arrow7 {
-    font-size: 2em;
-    color: @bluetint;
-    background: @font_dark_alternative;
+  font-size: 2em;
+  color: @bluetint;
+  background: @font_dark_alternative;
 }
 #custom-arrow8 {
-    font-size: 2em;
-    color: @bg;
-    background: @bluetint;
+  font-size: 2em;
+  color: @bg;
+  background: @bluetint;
 }
 
 /* And now modules themselves in their respective order */
 #clock.time {
-    background: @font_gruv_normal;
-    color: @font_dark_alternative;
+  background: @font_gruv_normal;
+  color: @font_dark_alternative;
 }
 #clock.date {
-    background: @font_gruv_normal;
-    color: @font_dark_alternative;
+  background: @font_gruv_normal;
+  color: @font_dark_alternative;
 }
 
 #custom-scratchpad-indicator {
-    background: @bluetint;
-    color: @font_gruv_normal;
+  background: @bluetint;
+  color: @font_gruv_normal;
 }
 #language {
-    background: @bg;
-    color: @font_gruv_normal;
+  background: @bg;
+  color: @font_gruv_normal;
 }
 #custom-rofi {
-    background: @bg;
-    padding: 0em 1.2em;
-    color: @font_gruv_normal;
+  background: @bg;
+  padding: 0em 1.2em;
+  color: @font_gruv_normal;
 }
 #custom-pacman {
-    background: @bluetint;
-    color: @font_gruv_normal;
+  background: @bluetint;
+  color: @font_gruv_normal;
 }
 #idle_inhibitor {
-    background: @font_dark_alternative;
-    color: @font_gruv_normal;
+  background: @font_dark_alternative;
+  color: @font_gruv_normal;
 }
 #custom-playerctl {
-    font-size: 0.9em;
-    color: @font_gruv_normal;
+  font-size: 0.9em;
+  color: @font_gruv_normal;
 }
-#custom-playerctl.paused{
-    color: @font_dark_alternative;
-    font-size: 0.9em;
+#custom-playerctl.paused {
+  color: @font_dark_alternative;
+  font-size: 0.9em;
 }
 /* Workspaces stuff */
 #workspaces {
 }
 #workspaces button {
-    background: @bg;
-    padding: 0em 1.2em;
-    color: @font_dark_alternative;
-    min-width: 0em;
+  background: @bg;
+  padding: 0em 1.2em;
+  color: @font_dark_alternative;
+  min-width: 0em;
 }
 #workspaces button.active {
-    background: @font_gruv_faded;
-    font-weight: bolder; /* Somewhy the bar-wide setting is ignored*/
+  background: @font_gruv_faded;
+  font-weight: bolder; /* Somewhy the bar-wide setting is ignored*/
 }
 #workspaces button.urgent {
-    color: #c9545d;
-    opacity: 1;
+  color: #c9545d;
+  opacity: 1;
 }
 #custom-cpugovernor {
-    background-color: @font_dark_alternative;
-    color: @font_gruv_normal;
+  background-color: @font_dark_alternative;
+  color: @font_gruv_normal;
 }
 #custom-cpugovernor.perf {
-    
 }
 #cpu {
-    background: @bluetint;
-    color: @font_gruv_normal;
-    padding-left: 0em;
-    padding-right: 0.2em;
+  background: @bluetint;
+  color: @font_gruv_normal;
+  padding-left: 0em;
+  padding-right: 0.2em;
 }
 #cpu.critical {
-    color: @nord_dark_font;
-    background: @critical;
+  color: @nord_dark_font;
+  background: @critical;
 }
 #memory {
-    background: @bluetint;
-    color: @font_gruv_normal;
-    padding-left: 0.2em;
-    padding-right: 0.5em;
+  background: @bluetint;
+  color: @font_gruv_normal;
+  padding-left: 0.2em;
+  padding-right: 0.5em;
 }
 #temperature {
-    background-color: @bluetint;
-    color: @font_gruv_normal;
-    padding-right: 0em;
+  background-color: @bluetint;
+  color: @font_gruv_normal;
+  padding-right: 0em;
 }
 #temperature.critical {
-    background:  @critical;
+  background: @critical;
 }
 #custom-gpu {
-    background: @bluetint;
-    color: @font_gruv_normal;
-    padding-left: 0em;    
+  background: @bluetint;
+  color: @font_gruv_normal;
+  padding-left: 0em;
 }
 #pulseaudio {
-    background: @font_dark_alternative;
-    color: @font_gruv_normal;
+  background: @font_dark_alternative;
+  color: @font_gruv_normal;
 }
 #pulseaudio.muted {
-    color: #fb4833;
+  color: #fb4833;
 }
 #pulseaudio.source-muted {
-    /* moved to config */
+  /* moved to config */
 }
 #bluetooth {
-    background: @bg;
-    color: @font_gruv_normal;
+  background: @bg;
+  color: @font_gruv_normal;
 }
 #network {
-    background: @bg;
-    color: @font_gruv_faded;
+  background: @bg;
+  color: @font_gruv_faded;
 }
 #tray {
-    background: @bg;
-    color: @font_gruv_normal;
+  background: @bg;
+  color: @font_gruv_normal;
 }
 
 #custom-alsa {
-    background: @sound;
+  background: @sound;
 }
 #custom-layout {
-    background: @layout;
+  background: @layout;
 }
-#mode { /* Shown current Sway mode (resize etc.) */
-    color: @light;
-    background: @mode;
+#mode {
+  /* Shown current Sway mode (resize etc.) */
+  color: @light;
+  background: @mode;
 }
 #battery {
-    background: @battery;
+  background: @battery;
 }
 
 #backlight {
-    background: @backlight;
+  background: @backlight;
 }
 #window {
-    margin-right: 40px;
-    margin-left: 40px;
-    font-weight: normal;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-weight: normal;
 }
 #custom-weather {
-    background: @font_gruv_normal;
-    color: @font_dark_alternative;
-    font-weight: bold;
-    padding: 0 0.6em;
+  background: @font_gruv_normal;
+  color: @font_dark_alternative;
+  font-weight: bold;
+  padding: 0 0.6em;
 }
