@@ -85,7 +85,7 @@
   },
   "clock#date": {
     "interval": 20,
-    "format": "  {:%a %e/%m}",
+    "format": "  {:%a %m/%e}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     //"today-format": "<b>{}</b>",
     "on-click": "gnome-calendar",
